@@ -1,28 +1,10 @@
-== README
+== Random Color Generator Code Challenge
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+For the assignment, the backend code should be done in ROR. Front-end code should be done using HTML, CSS, JS (jQuery and SASS are optional but encouraged).
 
-Things you may want to cover:
+There are two steps
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+• Setup a queue in the backend. This queue can store a tuple consisting of three values between (0 -255) that represent three colors  <R, G, B>. A new tuple is randomly generated and inserted in the queue every 3 seconds.
+• Serve a simple web-page with a start button. When start button is clicked, fetch a tuple from the backend queue using an AJAX request and update the background color on the page. A new color should be fetched and updated every 3 seconds.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
