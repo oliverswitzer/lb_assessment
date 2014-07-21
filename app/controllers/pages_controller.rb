@@ -3,11 +3,13 @@ class PagesController < ApplicationController
   end
 
   def new_color
-    binding.pry
     color = ColorQueue.get_color
 
-    respond_to do |format|
-      format.json { color }
-    end
+    render :json => color
+  end
+
+  def end_thread
+    @@thread.kill
+    render nothing: true
   end
 end

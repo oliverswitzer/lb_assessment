@@ -1,6 +1,7 @@
 LittleBits::Application.routes.draw do
   root 'pages#index'
   get '/new-color' => 'pages#new_color'
+  get '/end-thread' => 'pages#end_thread'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
