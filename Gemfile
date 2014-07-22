@@ -18,7 +18,7 @@ gem 'coffee-rails', '~> 4.0.0'
 group :test, :development do
   gem 'rspec-rails'
   gem 'pry'
-  gem 'debugger'
+  gem 'jasmine-rails'
 end
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby

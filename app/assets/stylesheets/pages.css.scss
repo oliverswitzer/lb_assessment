@@ -1,3 +1,30 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$buttonUnit: 150px;
+
+button {
+  outline: none;
+  position: fixed;
+  left: 45%;
+  top: 45%;
+
+  width: $buttonUnit;
+  height: $buttonUnit/2;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  border: 5px solid white;
+  border-radius: $buttonUnit/10;
+
+  &.active {
+    border-color: black;
+    background-color: white;
+    color: black;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

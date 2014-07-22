@@ -1,4 +1,5 @@
 LittleBits::Application.routes.draw do
+  mount JasmineRails::Engine => '/specs' if defined?(JasmineRails)
   root 'pages#index'
   get '/new-color' => 'pages#new_color'
   get '/end-thread' => 'pages#end_thread'

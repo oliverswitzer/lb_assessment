@@ -47,5 +47,9 @@ describe "ColorQueue" do
         ColorQueue.queue.should include(color)
       end
     end
+
+    after do
+      reset_queue
+    end
   end
 end
