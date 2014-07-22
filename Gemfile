@@ -20,6 +20,11 @@ group :test, :development do
   gem 'pry'
   gem 'jasmine-rails'
 end
+
+group :production do
+  gem 'rails_12factor'
+end
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
